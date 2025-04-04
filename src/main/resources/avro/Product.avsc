@@ -1,0 +1,12 @@
+{
+  "namespace": "com.example",
+  "type": "record",
+  "name": "Product",
+  "fields": [
+    { "name": "productId", "type": "int" },
+    { "name": "name", "type": "string" },
+    { "name": "description", "type": "string" },
+    { "name": "price", "type": "double" },
+    { "name": "barcode", "type": "string" }
+  ]
+}
