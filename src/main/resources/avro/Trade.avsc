@@ -1,0 +1,12 @@
+{
+  "namespace": "com.trades",
+  "type": "record",
+  "name": "Trade",
+  "fields": [
+    { "name": "symbol", "type": "string" },
+    { "name": "side", "type": "string" },
+    { "name": "timestamp", "type": "long" },
+    { "name": "price", "type": "double" },
+    { "name": "amount", "type": "double" }
+  ]
+}

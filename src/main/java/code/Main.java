@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @SpringBootApplication
 public class Main {
-    @Component // Annotation for component scanning
+    @Component
     public static class UserRunner {
 
         private final KafkaProducer<User> kafkaProducer;
@@ -33,13 +33,13 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         ConfigurableApplicationContext context = SpringApplication.run(Main.class, args);
-
-        // Initializing the Kafka producer
-        UserRunner runner = context.getBean(UserRunner.class);
-        runner.run();
-
-        // Download schemas from registry
-        SchemaDownloadRunner schemaRunner = context.getBean(SchemaDownloadRunner.class);
-        schemaRunner.download();
+//
+//        // Initializing the Kafka producer
+//        UserRunner runner = context.getBean(UserRunner.class);
+//        runner.run();
+//
+//        // Download schemas from registry
+//        SchemaDownloadRunner schemaRunner = context.getBean(SchemaDownloadRunner.class);
+//        schemaRunner.download();
     }
 }

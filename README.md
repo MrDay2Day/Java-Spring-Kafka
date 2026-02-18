@@ -239,6 +239,12 @@ The schema downloader utility provides the following capabilities:
 2. Download all available schemas from the registry
 3. Save schemas as properly formatted `.avsc` files for use in code generation
 
+To generate source from `.asc` files run: 
+
+```bash
+mvn clean generate-sources
+```
+
 This is particularly useful for:
 - Version control of schemas
 - Documentation purposes
