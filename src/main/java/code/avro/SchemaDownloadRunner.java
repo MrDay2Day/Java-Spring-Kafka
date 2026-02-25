@@ -1,11 +1,10 @@
-package code.schemaDownload;
+package code.avro;
 
-import io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException;
+import code.avro.schemaDownload.SchemaRegistryDownloader;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.io.IOException;
 
 @Component
 public class SchemaDownloadRunner implements CommandLineRunner {
@@ -17,7 +16,10 @@ public class SchemaDownloadRunner implements CommandLineRunner {
         this.downloader = downloader;
     }
 
+
+    @PostConstruct
     public void download() throws Exception {
+        System.out.println("Running AVRO Schema Downloader");
         downloader.downloadAllSchemas();
     }
 

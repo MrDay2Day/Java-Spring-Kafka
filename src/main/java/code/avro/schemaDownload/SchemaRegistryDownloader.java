@@ -1,4 +1,4 @@
-package code.schemaDownload;
+package code.avro.schemaDownload;
 
 import io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient;
 import io.confluent.kafka.schemaregistry.client.SchemaRegistryClient;

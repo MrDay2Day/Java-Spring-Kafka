@@ -1,4 +1,4 @@
-package code;
+package code.app.streamers;
 
 import com.trades.Trade;
 import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde;
