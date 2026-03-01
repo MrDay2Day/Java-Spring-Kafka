@@ -51,7 +51,7 @@ public class KafkaStreamsProcessor {
 
         stream
                 .filter((key, trade) -> {
-                    if(trade.getPrice() > 15000.00){
+                    if(trade.getPrice() > 20000.00){
                         return true;
                     } else {
                         return false;
